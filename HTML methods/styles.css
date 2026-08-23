@@ -1,0 +1,16 @@
+.container {
+  border: 2px solid crimson;
+  margin: 30px;
+  padding: 20px;
+}
+.container p {
+  font-size: 20px;
+  color: orange;
+}
+.container button {
+  padding: 6px;
+  border: 3px solid purple;
+  outline: 3px solid violet;
+  border-radius: 3px;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */
