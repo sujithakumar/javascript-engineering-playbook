@@ -1,0 +1,29 @@
+{
+  "name": "javascript-engineering-playbook",
+  "version": "1.0.0",
+  "description": "Senior Front-End Engineering playbook demonstrating modern JavaScript, browser internals, async programming, testing, performance, accessibility, and AI-assisted development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1, vitest",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sujithakumar/javascript-engineering-playbook.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sujithakumar/javascript-engineering-playbook/issues"
+  },
+  "homepage": "https://github.com/sujithakumar/javascript-engineering-playbook#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.9.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.11.0",
+    "prettier": "^3.9.6",
+    "vitest": "^4.1.11"
+  }
+}
