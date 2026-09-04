@@ -9,8 +9,8 @@ let person = {
 }
 
 console.log("Name: ", person.name);
-console.log("Age: ", person.name);
-console.log("Address: ", person.name);
+console.log("Age: ", person.age);
+console.log("Address: ", person['address']);
 console.log("Greet: ", person.greet());
 console.log("Greet: ", person.greeting());
 console.log(" ");
