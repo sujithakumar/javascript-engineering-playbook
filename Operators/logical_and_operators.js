@@ -36,17 +36,6 @@ console.log("undefined && true =     ", undefined && true);
 console.log("undefined && false =     ", undefined && false);
 console.log("undefined && result =     ", undefined && result);
 
-
-console.log("");
-console.log("LOGICAL AND with NaN");
-console.log("result && result =     ", result && result);
-console.log("result && undefined =     ", result && undefined);
-console.log("result && null =     ", result && null);
-console.log("result && 0 =     ", result && 0);
-console.log("result && 1 =     ", result && 1);
-console.log("result && true =     ", result && true);
-console.log("result && false =     ", result && false);
-
 console.log("");
 console.log("LOGICAL AND with string");
 console.log("\"hello\" && true =    ", "hello" && true);
@@ -76,6 +65,16 @@ console.log("25 && 1 =    ", 25 && 1);
 console.log("25 && null =    ", 25 && null);
 console.log("25 && undefined =    ", 25 && undefined);
 console.log("25 && result =    ", 25 && result);
+
+console.log("");
+console.log("LOGICAL AND with NaN");
+console.log("result && result =     ", result && result);
+console.log("result && undefined =     ", result && undefined);
+console.log("result && null =     ", result && null);
+console.log("result && 0 =     ", result && 0);
+console.log("result && 1 =     ", result && 1);
+console.log("result && true =     ", result && true);
+console.log("result && false =     ", result && false);
 
 console.log("");
 console.log("LOGICAL AND Chaining ");
