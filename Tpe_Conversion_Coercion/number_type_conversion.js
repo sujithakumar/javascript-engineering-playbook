@@ -1,0 +1,14 @@
+console.log(" ");
+console.log("Number('10') =    ", Number('10'));
+console.log("Number('10.5') =    ", Number('10.5'));
+console.log("Number(' 10 ') =    ", Number(' 10 '));
+console.log("Number('') =    ", Number(''));
+console.log("Number(' ') =    ", Number(' '));
+console.log("Number(true) =    ", Number(true));
+console.log("Number(false) =    ", Number(false));
+console.log("Number(null) =    ", Number(null));
+console.log("Number(undefined) =    ", Number(undefined));
+console.log("Number('hello') =    ", Number('hello'));
+let result = 0/0;
+console.log("NAN :: Number(result) =    ", Number(result));
+console.log(" ");
