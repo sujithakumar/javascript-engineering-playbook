@@ -12,5 +12,12 @@ console.log("false * 5 =    ", false * 5);
 console.log("+true =    ", +true);
 console.log("+false =    ", +false);
 
+console.log("");
+console.log("BOOLEAN COERCION IN STRING");
+console.log("true + 'string' =    ", true + 'string');
+console.log("true + 'string' =    ", true + 'string');
+console.log("'string' + false =    ", 'string' + false);
+console.log("'string' + true =    ", 'string' + true);
+
 
 
