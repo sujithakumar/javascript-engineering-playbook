@@ -1,25 +1,25 @@
-const globalHero = "Superman"; // Level 1: Global Scope
+const globalNum = 10;
+console.log("globalNum:  ", globalNum);
 
-function outerLayer() {
-  const outerHero = "Batman"; // Level 2: Outer Scope
+function add() {
+    let a = 2;
+    let b = 3;
+    console.log();
+    console.log("Inside add() function:");
 
-  function middleLayer() {
-    const middleHero = "Flash"; // Level 3: Middle Scope
-
-    function innerLayer() {
-      const innerHero = "Robin"; // Level 4: Local Scope
-
-      // JavaScript searches outward through every level
-      console.log(innerHero);  // 1st check: Local ("Robin")
-      console.log(middleHero); // 2nd check: Middle ("Flash")
-      console.log(outerHero);  // 3rd check: Outer ("Batman")
-      console.log(globalHero); // 4th check: Global ("Superman")
+    function addition() {
+        let c = 100;
+        console.log();
+        console.log("Inside addition() function (Scope Chain):");
+        console.log("Total sum:  ", a + b + c);
     }
 
-    innerLayer();
-  }
-
-  middleLayer();
+    console.log();
+    console.log("calling addition function:");
+    addition();
 }
 
-outerLayer();
+console.log();
+console.log("calling add function:");
+add();
+
