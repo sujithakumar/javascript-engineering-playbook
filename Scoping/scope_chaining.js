@@ -1,17 +1,25 @@
-const a = 10;
+const globalNum = 10;
+console.log("globalNum:  ", globalNum);
 
-function outer() {
-  const b = 20;
+function add() {
+    let a = 2;
+    let b = 3;
+    console.log();
+    console.log("Inside add() function:");
 
-  function inner() {
-    const c = 30;
+    function addition() {
+        let c = 100;
+        console.log();
+        console.log("Inside addition() function (Scope Chain):");
+        console.log("Total sum:  ", a + b + c);
+    }
 
-    console.log(a);
-    console.log(b);
-    console.log(c);
-  }
-
-  inner();
+    console.log();
+    console.log("calling addition function:");
+    addition();
 }
 
-outer();
+console.log();
+console.log("calling add function:");
+add();
+
