@@ -15,5 +15,6 @@ const counter = (function() {
 counter.increment();
 counter.increment(); 
 counter.decrement(); 
-console.log(count); 
+console.log(count); //error
+
 
