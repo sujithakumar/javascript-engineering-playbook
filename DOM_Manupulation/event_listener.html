@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Event Listener</title>
+    <link rel="icon" href="./Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+<bod>
+    <div class="container">
+        <input type="text" id="textbox" value="TB">
+        <button id="submitBtn" tabindex="0">Click Me</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('submitBtn');
+        btn.addEventListener('click', (e) => {
+            console.log('You clicked the button!');
+        });
+        const TB = document.getElementById('textbox');
+        TB.addEventListener('keypress',(e)=>{
+            console.log("text box keypress - which key: ",e.key);
+            console.log("text box keypress - key code:  ",e.keyCode);
+        });
+    </script>
+
+</bod>
+
+</html>
