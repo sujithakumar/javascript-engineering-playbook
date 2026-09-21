@@ -1,0 +1,36 @@
+@mixin style1 {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container {
+    border: 2px solid crimson;
+   @include style1();
+
+
+    #textbox,
+    #textarea,
+    #para {
+        @include style1();
+        color: skyblue;
+    }
+
+    #div,
+    #outdiv {
+        border: 3px solid red;
+        width: 200px;
+        height: 200px;
+        @include style1();
+    }
+
+    button {
+        padding: 6px;
+        border: 3px solid purple;
+        outline: 3px solid violet;
+        border-radius: 3px;
+        font-weight: bold;
+        margin: 3px;
+    }
+}
