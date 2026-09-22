@@ -14,14 +14,18 @@
 
     <script>
         const btn = document.getElementById('submitBtn');
-        btn.addEventListener('click', (e) => {
-            console.log('You clicked the button!');
-        });
-        const TB = document.getElementById('textbox');
-        TB.addEventListener('keypress',(e)=>{
-            console.log("text box keypress - which key: ",e.key);
-            console.log("text box keypress - key code:  ",e.keyCode);
-        });
+        let clickCount = 0;
+
+        function handleEvent() {
+            clickCount++;
+            console.log('You clicked the button! ('+ clickCount +'/3)');
+
+            if (clickCount >= 3) {
+                btn.removeEventListener('click', handleEvent);
+                console.log('Event listener removed after 3 clicks.');
+            }
+        }
+        btn.addEventListener('click', handleEvent);
     </script>
 
 </body>
