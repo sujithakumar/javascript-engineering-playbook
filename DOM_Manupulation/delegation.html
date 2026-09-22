@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delegation</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <ul id="products">
+            <li>Product 1 <button>Delete</button></li>
+            <li>Product 2 <button>Delete</button></li>
+            <li>Product 3 <button>Delete</button></li>
+        </ul>
+    </div>
+    <script>
+        const products = document.getElementById("products");
+
+        products.addEventListener("click", function (event) {
+            console.log("element clicked with parent:   ",event.currentTarget );
+            console.log("element clicked:   ",event.target );
+            if (event.target.tagName === "BUTTON") {
+                event.target.parentElement.remove();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Event Listener</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="textbox" value="TB">
+        <button id="submitBtn" tabindex="0">Click Me</button>
+    </div>
+
+    <script>
+        const btn = document.getElementById('submitBtn');
+        let clickCount = 0;
+
+        function handleEvent() {
+            clickCount++;
+            console.log('You clicked the button! ('+ clickCount +'/3)');
+
+            if (clickCount >= 3) {
+                btn.removeEventListener('click', handleEvent);
+                console.log('Event listener removed after 3 clicks.');
+            }
+        }
+        btn.addEventListener('click', handleEvent);
+    </script>
+
+</body>
+
+</html>

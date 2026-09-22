@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bubble and Capture </title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <ul>
+            <li id="item">Click me</li>
+        </ul>
+    </div>
+    <script>
+        parent.addEventListener("click", function () {
+            console.log("Parent called");
+        });//try adding true as third arg
+
+        item.addEventListener('click',function(){
+            console.log("Clicked List Item");
+        });
+    </script>
+
+</body>
+
+</html>

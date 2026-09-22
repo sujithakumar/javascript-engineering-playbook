@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Event Control </title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button id="submitBtn" tabindex="0">
+            <a id="google" href="http://www.google.com">Click to Google</a>
+        </button>
+    </div>
+
+    <div class="container" id="outer">
+        Outer box
+        <div class="container">
+            <button id="btn">Click me</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="http://www.google.com" onclick="return false;">
+            Click to Google
+        </a>
+    </div>
+
+    <script>
+
+        //prevent default browser actions: preventDefault
+        google.addEventListener('click', (e) => {
+            console.log('You clicked the button!');
+            e.preventDefault();
+        });
+
+        //stop events from bubbling up : stopPropagation();
+        outer.addEventListener('click', () => {
+            console.log('Outer box clicked');
+        });
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Stops the bubble here
+            console.log('Button clicked');
+        });
+
+
+        // return false;
+
+    </script>
+
+</body>
+
+</html>
