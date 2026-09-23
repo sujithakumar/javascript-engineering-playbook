@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Screen</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <p>
+        <h1> Dummy html</h1>
+        </p>
+    </div>
+
+
+
+    <script>
+
+        console.log("Screen:", screen);
+        console.log("Screen Width:", screen.width);
+        console.log("Screen Height:", screen.height);
+        console.log("Available Width:", screen.availWidth);
+        console.log("Available Height:", screen.availHeight);
+        console.log("Color Depth:", screen.colorDepth);
+        console.log("Pixel Depth:", screen.pixelDepth);
+        console.log("Orientation Type:", screen.orientation?.type);
+        console.log("Orientation Angle:", screen.orientation?.angle);
+        console.log("Is Extended Display:", screen.isExtended);
+        console.log("Device Pixel Ratio:", window.devicePixelRatio);
+
+        console.log("Viewport:", window.innerWidth, window.innerHeight);
+        console.log("Screen:", screen.width, screen.height);
+        console.log("Available Screen:", screen.availWidth, screen.availHeight);
+
+    </script>
+</body>

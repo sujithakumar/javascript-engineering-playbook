@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Location</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <p>
+        <h1> Dummy html</h1>
+        <button onclick="assign()">Assign Google</button>
+        <button onclick="replace()">Replace Google</button>
+        </p>
+    </div>
+
+
+
+    <script>
+        console.log(location.href);
+        console.log(location.protocol);
+        console.log(location.hostname);
+        console.log(location.port);
+        console.log(location.pathname);
+        console.log(location.search);
+        console.log(location.hash);
+
+        function assign() {
+            location.assign("https://www.google.com");
+        }
+
+        function replace() {
+            location.replace("https://wwww.google.com");
+        }
+
+    </script>
+</body>

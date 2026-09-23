@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scroll</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <p>
+        <h1> 1 html</h1><button onClick="tobottom()">Go to Bottom</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 2 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 3 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 4 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 5 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 6 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 7 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 8 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 9 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 10 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 11 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 12 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 13 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 14 html</h1><button onClick="tobottom()">Go to Bottom</button>
+        </p>
+    </div>
+    <div class="container" id="parent">
+        <p>
+        <h1> 15 html</h1><button onClick="toTop()">Go to Top</button>
+        </p>
+    </div>
+
+
+
+    <script>
+        // window.scrollTo(0, 500);
+        // window.scrollBy(0, 500);
+
+        function toTop() {
+            console.log("Scrolling to the top...");
+            window.scrollTo(0, 0);
+            onsole.log("Horizontal:", window.scrollX);
+            console.log("Vertical:", window.scrollY);
+        }
+
+        function tobottom() {
+            console.log('Scroll 500px downward from the current position')
+            window.scrollBy(0, 500);
+            console.log("Horizontal:", window.scrollX);
+            console.log("Vertical:", window.scrollY);
+            if (window.scrollY > 500) {
+                console.log("User has scrolled more than 500px");
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
