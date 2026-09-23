@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>History</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <p>
+        <h1> Dummy html</h1>
+        <button onclick="assign()">Assign Google</button>
+
+        </p>
+    </div>
+
+
+
+    <script>
+        function assign() {
+            location.assign("https://www.google.com");
+        }
+        console.log(window.history);
+        // console.log(history.back());
+        // console.log(history.forward());
+        // console.log(history.go());
+        // console.log(history.go(1));
+        // console.log(history.go(-1));
+        console.log("Current history length:", history.length);
+
+
+    </script>
+</body>

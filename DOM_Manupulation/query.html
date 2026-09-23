@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Query Selectors</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <ul id="products">
+            <li>Product 1 <button class="btn">A</button></li>
+            <li id="li2">Product 2 <button class="btn">B</button></li>
+            <li>Product 3 <button class="btn">C</button></li>
+        </ul>
+        <button class="btn">Add</button>
+        <button class="btn">Multiply</button>
+        <button class="btn">Sub</button>
+    </div>
+    <script>
+        let listItem2 = document.querySelector('#li2');
+        console.log("queryselector('#li2'):   ", listItem2);
+
+        let buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            console.log('Targetted All Buttons:  ', button.innerHTML);
+            button.addEventListener("click", (e) => {
+                console.log("Clicked", e.currentTarget);
+            });
+        });
+
+        const products = document.querySelector("#products");
+        const buttonList = products.querySelectorAll(".btn");
+        buttonList.forEach(button =>{
+            console.log('Targetted Buttons inside products:  ', button.innerHTML);
+        });
+        
+
+    </script>
+</body>

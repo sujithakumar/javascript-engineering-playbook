@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Window</title>
+    <link rel="icon" href="../Assets/icons/sparkling/large.png">
+    <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="parent">
+        <p>
+        <h1> Dummy html</h1>
+        <button onclick="openNewSite()">open google</button>
+        <button onclick="openNewSiteInNewtab()">open google in new tab</button>
+        </p>
+    </div>
+
+
+
+    <script>
+
+        console.log("window", window);
+        console.log("Viewport Width:window.innerWidth :", window.innerWidth);
+        console.log("Viewport Height: window.innerHeight: ", window.innerHeight);
+
+        console.log('location:window.location:   ', window.location);
+        console.log('location:window.location.href:   ', window.location.href);
+
+        function openNewSite() {
+            window.open("https://www.google.com");
+        }
+        function openNewSiteInNewtab() {
+            window.open("https://www.google.com", "_blank");
+        }
+
+        //window APIs
+        window.onload = function () {
+            console.log("Window loaded");
+        };
+
+        window.onresize = function () {
+            console.log("window being resized",window.innerWidth);
+        }; 
+
+        window.onscroll = function () {
+            console.log("window being scrolled",window.scrollY);
+        };
+
+    </script>
+</body>
