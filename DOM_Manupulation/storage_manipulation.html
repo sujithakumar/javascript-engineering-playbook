@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Storages</title>
+    <link href="../Assets/styles/storageStyles.css" rel="stylesheet">
+    <link href="../Assets/styles/styles.css" rel="stylesheet">
+    <script src="../Assets/scripts/storageManipulation.js"></script>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span> Store: </span>
+        <button type="button" name="local" onClick="store('L')">Local storage</button>
+        <br> or
+        <button type="button" name="session" onClick="store('S')">Session storage</button>
+    </div>
+    <div class="container">
+        <span> Read: </span>
+        <button type="button" name="local" onClick="read('L')">Local storage</button>
+        <br> or
+        <button type="button" name="session" onClick="read('S')">Session storage</button>
+    </div>
+    <div class="container">
+        <span> Clear: </span>
+        <button type="button" name="local" onClick="clearStore('L')">Local storage</button>
+        <br> or
+        <button type="button" name="session" onClick="clearStore('S')">Session storage</button>
+    </div>
+    <div class="container">
+        
+        <div class="div-borders">
+            <form>
+                Name: <input type="text" id="userName">
+                <br> <br>
+                Delivery Date: <input type="datetime" id="deliveryDate">
+                <br> <br>
+                Address:<textarea rows="3" column="5" id="address"></textarea>
+                <br> <br>
+                Ordered Items: <br>
+                <table border="1" id="itemTable">
+                    <thead>
+                        <td>Item</td>
+                        <td>Quantity</td>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+
+            </form>
+        </div>
+    </div>
+</body>
