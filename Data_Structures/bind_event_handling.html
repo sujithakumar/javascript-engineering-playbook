@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bind()</title>
+  <link rel="icon" href="../Assets/icons/sparkling/large.png">
+  <link rel="stylesheet" href="../Assets/styles/styles.css">
+</head>
+
+<body>
+  <script>
+    console.log();
+    console.log('bind in event handling');
+    const user1 = {
+      name: "Alice",
+      age: 30,
+
+      greet: function () {
+        console.log(
+          "Hello, my name is " +
+          this.name +
+          " and I am " +
+          this.age +
+          " years old."
+        );
+      },
+
+      startGreeting: function () {
+        const button = document.getElementById("greetButton");
+        button.addEventListener("click", this.greet.bind(this));
+      }
+    };
+    document.body.innerHTML = '<button id="greetButton">Greet</button>';
+    user1.startGreeting();
+  </script>
+</body>
+
