@@ -23,6 +23,12 @@ console.log(" ");
 console.log("person - entries", Object.entries(person));
 console.log(" ");
 
+//iterating objects iterables
+Object.keys(person).forEach(x=>{
+    console.log(x);
+});
+console.log(" ");
+
 
 
 let dummyObject = {
@@ -60,6 +66,18 @@ console.log(" ");
 console.log("emptying values");
 dummyObject = {};
 console.log("dummy Object ", dummyObject);
+console.log(" ");
+
+//Object.hasOwn()
+console.log("person hasOwn values");
+console.log('Object.hasOwn(person, "name")', Object.hasOwn(person, "name"));
+console.log('Object.hasOwn(person, "city")', Object.hasOwn(person, "city"));
+console.log(" ");
+
+//obj.hasOwnProperty()
+console.log("person hasOwnProperty values");
+console.log(' person.hasOwnProperty("name")', person.hasOwnProperty('name'));
+console.log(' person.hasOwnProperty("city")', person.hasOwnProperty('city'));
 console.log(" ");
 
 
