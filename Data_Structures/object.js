@@ -29,7 +29,12 @@ Object.keys(person).forEach(x=>{
 });
 console.log(" ");
 
-
+//passing dynamic key
+const key = "name";
+const user = {
+  [key]: "Sujitha"
+};
+console.log(user.name);
 
 let dummyObject = {
     name: "dummy",
